@@ -1,0 +1,63 @@
+.home-container {
+  height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #020617);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+  padding: 20px;
+}
+
+.home-title {
+  font-size: 2.8rem;
+  margin-bottom: 8px;
+}
+
+.home-subtitle {
+  font-size: 1.1rem;
+  color: #cbd5f5;
+  margin-bottom: 40px;
+}
+
+.home-card-container {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home-card {
+  width: 260px;
+  padding: 25px;
+  border-radius: 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+.home-card h2 {
+  margin-bottom: 10px;
+}
+
+.home-card p {
+  font-size: 0.95rem;
+  color: #e5e7eb;
+}
+
+/* CGPA Card */
+.home-card.cgpa {
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+}
+
+/* Attendance Card */
+.home-card.attendance {
+  background: linear-gradient(135deg, #16a34a, #065f46);
+}
+
+.home-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
